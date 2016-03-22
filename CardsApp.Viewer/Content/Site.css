@@ -1,12 +1,15 @@
 ﻿body {
   display: flex;
   min-height: 100vh;
+  max-height: 100vh;
   flex-direction: column;
 }
 
 .pure-g {
-  display: flex;
-  flex: 1;
+	display: flex;
+	flex: 1;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 .pure-g {
@@ -17,4 +20,14 @@ main {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
+}
+
+article {
+	box-sizing: border-box;
+}
+
+img {
+	border-collapse: collapse;
+	display: block;
+	float: left;
 }
