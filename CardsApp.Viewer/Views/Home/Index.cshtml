@@ -14,15 +14,19 @@
 <body>
 	<nav>navigation</nav>
 	<div class="pure-g" data-ng-controller="homeController">
-		<aside class="pure-u-1-3" style="background-color: #FF0000"></aside>
-		<main class="pure-u-1-3" style="background-color: #00FF00">
+		<aside class="pure-u-1-6" style="background-color: #FF0000"></aside>
+		<main class="pure-u-2-3" style="background-color: #00FF00">
 
-			<ul>
+			<article style="width: 90%; height: 300px; background-color: #0000FF">
+				Card1
+			</article>
+
+			@*<ul>
 				<li data-ng-repeat="c in cards">{{ c }}</li>
-			</ul>
+			</ul>*@
 
 		</main>
-		<aside class="pure-u-1-3" style="background-color: #FF0000"></aside>
+		<aside class="pure-u-1-6" style="background-color: #FF0000"></aside>
 	</div>
 	<footer>footer</footer>
 </body>

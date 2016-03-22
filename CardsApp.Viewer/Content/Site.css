@@ -12,3 +12,9 @@
 .pure-g {
 	display: flex;
 }
+
+main {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
