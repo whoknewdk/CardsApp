@@ -1,3 +1,20 @@
-﻿<div>
-    Index
-</div>
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+
+	<script src="~/Scripts/angular.js"></script>
+	<script src="~/Scripts/app/app.js"></script>
+	<script src="~/Scripts/app/home-controller.js"></script>
+</head>
+<body>
+	<div data-ng-controller="homeController">
+		<ul>
+			<li data-ng-repeat="c in cards">{{ c }}</li>
+		</ul>
+	</div>
+</body>
+</html>

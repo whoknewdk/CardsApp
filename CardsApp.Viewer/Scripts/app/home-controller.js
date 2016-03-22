@@ -3,17 +3,11 @@
 
     angular
         .module('app')
-        .controller('controller', controller);
+        .controller('homeController', homeController);
 
-    controller.$inject = ['$location']; 
+    homeController.$inject = ['$scope', '$http', '$location'];
 
-    function controller($location) {
-        /* jshint validthis:true */
-        var vm = this;
-        vm.title = 'controller';
-
-        activate();
-
-        function activate() { }
+    function homeController($scope, $http, $location) {
+    	$scope.cards = ['a','b','c'];
     }
 })();
