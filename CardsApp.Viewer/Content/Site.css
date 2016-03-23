@@ -20,6 +20,8 @@ main {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
+	padding: 30px;
+	box-sizing: border-box;
 }
 
 article {
@@ -34,7 +36,7 @@ img {
 
 /*********/
 .wrapper {
-  width: 80%;
+  width: 100%;
   display: inline-block;
   position: relative;
 }
